@@ -13,6 +13,18 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-turquoise: #40e0d0;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+body {
+  font-family: "Roboto Condensed" sans-serif;
+}
+
 .bg_primary-color {
   background-color: #FFFFFF;
 }
@@ -49,3 +61,30 @@
   width: 100%;
   opacity: 0.4;
 }
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  color: var(--primary-white) !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-turquoise);
+}
+
+.navbar-nav > li >a:hover {
+  border-top: 0.1875rem solid var(--primary-turquoise);
+{
