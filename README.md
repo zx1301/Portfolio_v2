@@ -10,7 +10,8 @@
 
 * Database: Postgres 
 
-* How to run the test suite
-
 * Deployment instructions
-
+1. Ensure correct versions for Ruby and Rails
+2. Bundle install for gems
+3. configuration for Postgresql (uses 'pg' gem)
+4. Installation for ReactJS (uses 'react-rails' gem) 
