@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+# Portfolio Website 
 
 * Ruby version
+2.5.1p57
 
 * System dependencies
 
@@ -18,11 +14,10 @@ Things you may want to cover:
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
 * ...
 =======
 # Portfolio_v2
->>>>>>> 76c08792ad87c99c542091342c6561319c487522
+
