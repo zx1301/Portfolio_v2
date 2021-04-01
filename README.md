@@ -19,4 +19,5 @@
     ```
     sudo service postgresql restart
     ```
+
 4. Installation for ReactJS (uses 'react-rails' gem) 
