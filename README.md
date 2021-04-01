@@ -15,5 +15,7 @@
 2. Bundle install for gems
 3. configuration for Postgresql (uses 'pg' gem)
   Database may need to be restarted:
-    ```sudo service postgresql restart```
+    ```
+    sudo service postgresql restart
+    ```
 4. Installation for ReactJS (uses 'react-rails' gem) 
