@@ -14,8 +14,11 @@
 1. Ensure correct versions for Ruby and Rails
 2. Bundle install for gems
 3. configuration for Postgresql (uses 'pg' gem)
-  Database may need to be restarted:
+
+	Database may need to be restarted:
+
     ```
     sudo service postgresql restart
     ```
+
 4. Installation for ReactJS (uses 'react-rails' gem) 
