@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import Particles from "react-particles-js";
+import AboutMe from "./AboutMe";
 export default () => (
   <>
     <Particles 
@@ -28,5 +29,6 @@ export default () => (
     />
     <Navbar />
     <Header />
+    <AboutMe />
   </>
 );
