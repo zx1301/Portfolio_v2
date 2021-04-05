@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import Particles from "react-particles-js";
 import AboutMe from "./AboutMe";
+import Experience from "./Experience";
+
 export default () => (
   <>
     <Particles 
@@ -30,5 +32,6 @@ export default () => (
     <Navbar />
     <Header />
     <AboutMe />
+    <Experience />
   </>
 );
