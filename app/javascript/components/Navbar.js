@@ -1,31 +1,33 @@
 import React from 'react'
+import {Link} from "react-scroll";
 // REACT FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-<nav className="navbar navbar-expand-lg navbar-light bg-secondary">
+<nav className="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
 <div className="container">
-  <a className="navbar-brand" href="/">Anthony Dohyung Kim</a>
+  <Link className="navbar-brand" smooth={true} to="home" offset={-110} href="/">Anthony Dohyung Kim</Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <FontAwesomeIcon icon={faBars} style = {{ color: "#fff" }} />
   </button>
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
       <li className="nav-item active">
-        <a className="nav-link" href="#">About Me <span className="sr-only">(current)</span></a>
+        <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">About Me <span className="sr-only">(current)</span></Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Experience</a>
+        <Link smooth={true} to="experience" offset={-110} className="nav-link" href="#">Experience</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Projects</a>
+        <Link smooth={true} to="portfolio" offset={-110} className="nav-link" href="#">Projects</Link>
       </li>
+{/*
       <li className="nav-item">
-        <a className="nav-link" href="#">Point of Contact</a>
+        <Link smooth={true} to="contacts" className="nav-link" href="#">Point of Contact</Link>
       </li>
-
+*/}
     </ul>
   </div>
 </div>

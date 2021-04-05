@@ -6,6 +6,7 @@ import Particles from "react-particles-js";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Portfolio from "./Portfolio";
+import Contacts from "./Contacts";
 
 export default () => (
   <>
