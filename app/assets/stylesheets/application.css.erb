@@ -25,6 +25,7 @@
   --primary-grey: #ccd1d9;
   --primary-light-grey: #f4f4f4;
   --primary-dark-grey: #666666;
+  --primary-black: #000000;
 }
 
 body {
@@ -288,4 +289,73 @@ nav ul li {
     float: none;
     direction: ltr;
   }
+}
+
+/*********** Portfolio ***************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-turquoise);
+}
+
+.portfolio-image {
+  width: 15rem;
+  height: 8rem;/*changes ratio of image */
+  border: 1px solid var(--primary-turquoise);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+/*------------- Overflow box --------------*/
+.overflow {
+  position: absolute;
+    opacity: 0;
+    background: var(--primary-black); 
+    width: 15rem;
+    height: 8rem;
+    top: 0;
+  border: 1px solid var(--primary-orange);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon{
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--primary-turquoise);
 }

@@ -5,6 +5,7 @@ import Header from "./Header";
 import Particles from "react-particles-js";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
+import Portfolio from "./Portfolio";
 
 export default () => (
   <>
@@ -33,5 +34,6 @@ export default () => (
     <Header />
     <AboutMe />
     <Experience />
+    <Portfolio />
   </>
 );
