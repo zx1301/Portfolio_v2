@@ -93,7 +93,7 @@ nav ul li {
   color: var(--primary-white) !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-turquoise);
 }
 
@@ -358,4 +358,80 @@ nav ul li {
 .hyper-link:hover {
   cursor: pointer;
   color: var(--primary-turquoise);
+}
+
+/********** Contacts **********/
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-turquoise);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
+/*--------------------- inputs -----------------*/
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-grey);
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-turquoise);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-turquoise);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem;
+}
+
+textarea.form-control {
+  margin: -0.3rem;
 }
